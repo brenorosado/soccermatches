@@ -1,5 +1,5 @@
 .matchesContent {
-    width: 77.5rem;
+    width: 75rem;   
 }
 
 .matches {
@@ -12,15 +12,15 @@
 }
 
 .match {
-    height: 10rem;
-    width: 24.9rem;
+    height: 10.5rem;
+    width: 24rem;
     display: column;
     justify-content: content;
     align-items: center;
     border-radius: 5px;
-    background-color: white;
+    background-color: #1e1e1e;
     cursor: pointer;
-    box-shadow: 0 6px 20px rgba(168, 198, 255, 0.17);
+    color: white;
 }
 
 .match:hover {
@@ -113,17 +113,18 @@
 
 .matchdaySelector {
     width: 100%;
-    background-color: #1e1e1e;
+    background-color: black;
+    border-radius: 5px;
     color: white;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 50px;
+    height: 40px;
     margin-bottom: 20px;
 }
 
 .matchdayButton {
-    background-color: #333333;
+    background-color: black;
     color: white;
     font-size: 25px;
     font-weight: bold;
@@ -134,12 +135,7 @@
     border-radius: 5px;
 }
 
-.matchdayButton i {
-    font-weight: 100;
-    color: white;
-}
-
 .matchdayDisplay {
-    font-size: 30px;
+    font-size: 25px;
     margin: 0px 20px;
 }

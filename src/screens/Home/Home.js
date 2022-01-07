@@ -8,7 +8,7 @@ import { LEAGUES } from "helpers/LeaguesHelper";
 const Home = () => {
     const [standingsData, setStandingsData] = useState(null);
     const [matchesData, setMatchesData] = useState(null);
-    const [league, setLeague] = useState('PL');
+    const [league, setLeague] = useState('BL1');
     const [chosenMatchday, setChosenMatchday] = useState(1);
 
     useEffect(() => {
@@ -38,8 +38,8 @@ const Home = () => {
         <>  
             <Menu data={LEAGUES} league={league} setLeague={setLeague} />
             <div className="home">
-                <Matches data={matchesData} chosenMatchday={chosenMatchday} setChosenMatchday={setChosenMatchday} />
                 <Standings data={standingsData} />
+                <Matches data={matchesData} chosenMatchday={chosenMatchday} setChosenMatchday={setChosenMatchday} />
             </div>
         </>
     );

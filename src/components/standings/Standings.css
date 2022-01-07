@@ -1,25 +1,27 @@
 .standings {
-    width: 35rem;
+    width: 42rem;
     display: flex;
     justify-content: center;
 }
 
 .standings table {
-    width: 600px;
+    width: 100%;
     align-items: center;
     text-align: center;
     border-collapse: collapse;
-    border-left: 1px solid #d4d4d4;
-    border-right: 1px solid #d4d4d4;
-    border-bottom: 1px solid #d4d4d4;
-    background-color: white;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    background-color: #1e1e1e;
+    color: white;
 }
 
 .tableHead {
+    height: 40px;
     font-size: 18px;
-    background-color: #1e1e1e;
+    background-color: black;
     color: white;
-    border: 1px solid white;
+    border: 1px solid black;
 }
 
 .tableHead td {
@@ -27,11 +29,11 @@
 }
 
 .tableBody {
-    border-bottom: 1px solid #d4d4d4;
+    border-top: 1px solid #333333;
 }
 
 .tableBody:hover {
-    background-color: lightgray;
+    background-color: black;
     cursor: pointer;
 }
 

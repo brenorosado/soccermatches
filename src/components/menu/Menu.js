@@ -8,13 +8,12 @@ const Menu = ({ data, league, setLeague }) => {
             <div className="menu">
                 {
                     data.map(item => {
-                        const [name, code] = item;
+                        const [name, code, svgFlag] = item;
                         return (
-                            <button key={name} onClick={(e) => {
-                                setLeague(code);
-                                // e.target.classList.add('selected');
-                            }
-                            }>{name.toUpperCase()}</button>
+                            <button key={name} onClick={(e) => setLeague(code)}>
+                            {`${name.toUpperCase()} `}
+                            <img src={svgFlag} alt={name} className='countriesFlags'/>
+                            </button>
                         );
                     })
 
