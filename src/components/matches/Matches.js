@@ -1,13 +1,13 @@
 import React from "react";
+import "./Matches.css";
 
 const Matches = ({ data, chosenMatchday, setChosenMatchday }) => {
 
     return (
         <div className="matchesContent">
             <div className="matchdaySelector">
-                <span className="matchdayDisplay">Matchday:</span>
                 <button className="matchdayButton" onClick={(e) => chosenMatchday <= 1 ? 1 : setChosenMatchday(chosenMatchday - 1)}>{"<"}</button>
-                <span className="matchdayDisplay">{chosenMatchday}</span>
+                <span className="matchdayDisplay">{`${chosenMatchday}º MATCHDAY`}</span>
                 <button className="matchdayButton" onClick={(e) => chosenMatchday >= (data[data.length -1].matchday) ? (data[data.length -1].matchday) : setChosenMatchday(chosenMatchday + 1)}>{">"}</button>
             </div>
             <div className="matches">

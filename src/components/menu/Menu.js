@@ -1,4 +1,5 @@
-import React from "react";
+import React from 'react';
+import './Menu.css';
 
 const Menu = ({ data, league, setLeague }) => {
 
@@ -18,16 +19,6 @@ const Menu = ({ data, league, setLeague }) => {
                     })
 
                 }
-            </div>
-            <div className="selectedLeague">
-                <span>
-                    {
-                        data.map(item => {
-                            const [name, code] = item;
-                            if (league === code) return name.toUpperCase();
-                        })
-                    }
-                </span>
             </div>
         </div>
     );

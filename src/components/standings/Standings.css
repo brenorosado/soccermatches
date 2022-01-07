@@ -1,0 +1,51 @@
+.standings {
+    width: 35rem;
+    display: flex;
+    justify-content: center;
+}
+
+.standings table {
+    width: 600px;
+    align-items: center;
+    text-align: center;
+    border-collapse: collapse;
+    border-left: 1px solid #d4d4d4;
+    border-right: 1px solid #d4d4d4;
+    border-bottom: 1px solid #d4d4d4;
+    background-color: white;
+}
+
+.tableHead {
+    font-size: 18px;
+    background-color: #1e1e1e;
+    color: white;
+    border: 1px solid white;
+}
+
+.tableHead td {
+    padding: 5px 2px;
+}
+
+.tableBody {
+    border-bottom: 1px solid #d4d4d4;
+}
+
+.tableBody:hover {
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+.tableBody td {
+    vertical-align: center;
+    padding: 1px 2px;
+    min-width: 25px;
+}
+
+.clubColumn {
+    text-align: left;
+}
+
+.clubCrest {
+    height: 30px;
+    padding: 2px;
+}
