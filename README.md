@@ -8,8 +8,10 @@ The standings and current matchday games are displayed in the interface, but it 
 Switch from leagues too fast may crash the app cause the free API account only provides 10calls/minute.
 <br/>
 
-![serieA](https://user-images.githubusercontent.com/83065685/147885898-36d2b555-e19c-4df4-a669-257b49a339c5.png)
+![laliga](https://user-images.githubusercontent.com/83065685/148611797-2aad8494-cc7d-4bf6-ad17-b08170df9c23.png)
 
-![premierleague](https://user-images.githubusercontent.com/83065685/147885895-9954f6a4-dd99-4f0e-b92f-4319b3e5098d.png)
+![premierleague](https://user-images.githubusercontent.com/83065685/148611801-499ab845-dad3-41ad-b6f3-64937fd4ed5d.png)
 
-![bundesliga](https://user-images.githubusercontent.com/83065685/147885900-5b738020-4abd-4ba0-911b-15d02daff019.png)
+![serieA](https://user-images.githubusercontent.com/83065685/148611804-d6b0349d-acea-47b4-aac9-343e05526840.png)
+
+![bundesliga](https://user-images.githubusercontent.com/83065685/148611809-03baa0bb-8e0f-49be-9359-14741ed6e2dd.png)
