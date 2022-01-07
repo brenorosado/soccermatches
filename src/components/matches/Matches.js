@@ -3,6 +3,16 @@ import "./Matches.css";
 
 const Matches = ({ data, chosenMatchday, setChosenMatchday }) => {
 
+    const formatDate = (matchDateAndTime) => {
+        const [date, matchTime] = matchDateAndTime.split("T");
+        const matchDate = new Date(`${date} ${matchTime}`);
+        const brazilianMatchDate = matchDate.toLocaleDateString('pt-BR');
+        const brazilianMatchTimeWithSeconds = matchDate.toLocaleTimeString('pt-BR');
+        const brazilianMatchTime = brazilianMatchTimeWithSeconds.substring(0, brazilianMatchTimeWithSeconds.length - 3);
+    
+        return `${brazilianMatchDate} - ${brazilianMatchTime}`;
+    };
+
     return (
         <div className="matchesContent">
             <div className="matchdaySelector">
@@ -20,7 +30,7 @@ const Matches = ({ data, chosenMatchday, setChosenMatchday }) => {
                             if (matchday === chosenMatchday) {
                                 return (
                                     <div className="match" key={id}>
-                                        <div className="matchDate"><span>{`${status}: ${utcDate}`}</span></div>
+                                        <div className={`matchDate ${status}`}><span>{`${status}: ${formatDate(utcDate)}`}</span></div>
                                         <div className="matchScore">
                                             <div className="team">
                                                 <img src={`https://crests.football-data.org/${homeTeam.id}.svg`} alt={homeTeam.name} className="clubCrestScore" />

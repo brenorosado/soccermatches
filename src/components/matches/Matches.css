@@ -30,17 +30,48 @@
 
 .matchDate {
     width: 100%;
-    height: 10%;
+    height: 13%;
     text-align: center;
     font-size: 15px;
     padding-top: 4px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
 }
 
 .matchDate span {
-    background-color: #2370ff;
     color: white;
-    border-radius: 7px;
-    padding: 1px 7px;
+}
+
+.LIVE {
+    background-color: #90ee90;
+}
+
+.IN_PLAY {
+    background-color: #adff2f;
+}
+
+.PAUSED {
+    background-color: #4fd4b8;
+}
+
+.FINISHED {
+    background-color: #41c541;
+}
+
+.SCHEDULED  {
+    background-color: #6da0ff;
+}
+
+.CANCELED {
+    background-color: #ff0000;
+}
+
+.SUSPENDED  {
+    background-color: #ff4800;
+}
+
+.POSTPONED {
+    background-color: #ff9f79;
 }
 
 .matchScore {
@@ -64,7 +95,7 @@
 
 .team {
     width: 40%;
-    height: 7.5rem;
+    height: 7.1rem;
     display: flex;
     flex-direction: column;
     justify-content: start;
