@@ -4,6 +4,7 @@ import Standings from "components/standings";
 import Matches from "components/matches";
 import Menu from "components/menu";
 import { LEAGUES } from "helpers/LeaguesHelper";
+import Footer from "components/footer";
 
 const Home = () => {
     const [standingsData, setStandingsData] = useState(null);
@@ -41,6 +42,7 @@ const Home = () => {
                 <Standings data={standingsData} />
                 <Matches data={matchesData} chosenMatchday={chosenMatchday} setChosenMatchday={setChosenMatchday} />
             </div>
+            <Footer />
         </>
     );
 };

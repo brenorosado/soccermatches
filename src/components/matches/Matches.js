@@ -26,6 +26,8 @@ const Matches = ({ data, chosenMatchday, setChosenMatchday }) => {
                         data.map(item => {
                             const { awayTeam, homeTeam, matchday, score, status, utcDate, id } = item;
                             const { fullTime } = score;
+                            const homeTeamCrest = `https://crests.football-data.org/${homeTeam.id}.svg`;
+                            const awayTeamCrest = `https://crests.football-data.org/${awayTeam.id}.svg`;
 
                             if (matchday === chosenMatchday) {
                                 return (
@@ -33,15 +35,15 @@ const Matches = ({ data, chosenMatchday, setChosenMatchday }) => {
                                         <div className={`matchDate ${status}`}><span>{`${status}: ${formatDate(utcDate)}`}</span></div>
                                         <div className="matchScore">
                                             <div className="team">
-                                                <img src={`https://crests.football-data.org/${homeTeam.id}.svg`} alt={homeTeam.name} className="clubCrestScore" />
-                                                <span>{`${homeTeam.name}`}</span>
+                                                <img src={homeTeamCrest} alt={homeTeam.name} className="clubCrestScore" />
+                                                <span>{homeTeam.name}</span>
                                             </div>
                                             <div className="scoreContainer">
                                                 <span className="score">{`${fullTime.homeTeam !== null ? fullTime.homeTeam : ''} x ${fullTime.awayTeam !== null ? fullTime.awayTeam : ''}`}</span>
                                             </div>
                                             <div className="team">
-                                                <img src={`https://crests.football-data.org/${awayTeam.id}.svg`} alt={awayTeam.name} className="clubCrestScore" />
-                                                <span>{`${awayTeam.name}`}</span>
+                                                <img src={awayTeamCrest} alt={awayTeam.name} className="clubCrestScore" />
+                                                <span>{awayTeam.name}</span>
                                             </div>
                                         </div>
                                     </div>
