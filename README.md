@@ -6,7 +6,8 @@
 - https://www.football-data.org/
 
 # Instruções
-- Para rodar a aplicação, é necessário criar uma conta em https://www.football-data.org/ e usar a sua API token em soccermatches/src/helpers/ApiHelper.js file.
+- Para rodar a aplicação, é necessário criar uma conta em https://www.football-data.org/ e usar a sua API token em soccermatches/src/helpers/ApiHelper.js file;
+- Clone esse repositório e execute `npm install` para baixar as dependências da aplicação. Em seguida, execute `npm start` para rodar a aplicação. O projeto irá rodar em `http:localhost:3000`. 
 
 # Stack
 - React
