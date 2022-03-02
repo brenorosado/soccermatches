@@ -1,12 +1,17 @@
 # ⚽soccermatches
-I created this project to practice my react skills.
-<br/>
-This project shows data of 9 soccer/football leagues using https://www.football-data.org/ API. 
-<br/>
-The standings and current matchday games are displayed in the interface, but it is possible to see the games from all other matchdays.] To run this project you'll need to sign up at https://www.football-data.org/ and use your API token in soccermatches/src/helpers/ApiHelper.js file.
-<br/>
-Switch from leagues too fast may crash the app cause the free API account only provides 10calls/minute.
-<br/>
+- Este projeto mostra os jogos e a classificação de 9 ligas.
+** Trocar de ligas rápido demais pode fazer a aplicação quebrar pois a conta gratuita da API suporta apenas 10calls/minuto.
+
+# API 
+- https://www.football-data.org/
+
+# Instruções
+- Para rodar a aplicação, é necessário criar uma conta em https://www.football-data.org/ e usar a sua API token em soccermatches/src/helpers/ApiHelper.js file.
+
+# Stack
+- React
+- HTML
+- CSS
 
 ![laliga](https://user-images.githubusercontent.com/83065685/148611797-2aad8494-cc7d-4bf6-ad17-b08170df9c23.png)
 
